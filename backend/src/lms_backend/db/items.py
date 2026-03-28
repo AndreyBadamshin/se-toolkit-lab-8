@@ -5,7 +5,7 @@ import logging
 from sqlmodel import select
 from sqlmodel.ext.asyncio.session import AsyncSession
 
-from app.models.item import ItemRecord
+from lms_backend.models.item import ItemRecord
 
 logger = logging.getLogger(__name__)
 

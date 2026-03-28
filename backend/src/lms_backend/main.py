@@ -11,9 +11,9 @@ from fastapi.responses import JSONResponse
 from starlette.middleware.base import RequestResponseEndpoint
 from starlette.responses import Response
 
-from app.auth import verify_api_key
-from app.routers import analytics, interactions, items, learners, pipeline
-from app.settings import settings
+from lms_backend.auth import verify_api_key
+from lms_backend.routers import analytics, interactions, items, learners, pipeline
+from lms_backend.settings import settings
 
 logger = logging.getLogger(__name__)
 

@@ -9,10 +9,10 @@ sys.path.insert(0, str(src_dir))
 def run_server():
     """Run the uvicorn server with configured settings."""
     import uvicorn
-    from app.settings import settings
+    from lms_backend.settings import settings
 
     uvicorn.run(
-        app="app.main:app",
+        app="lms_backend.main:app",
         host=settings.address,
         port=settings.port,
         reload=settings.reload,

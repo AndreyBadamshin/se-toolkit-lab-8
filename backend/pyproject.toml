@@ -25,3 +25,14 @@ dev = [
   "aiosqlite>=0.21.0",
   "greenlet>=3.2.0",
 ]
+
+[build-system]
+requires = ["setuptools>=75.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["lms_backend*"]
